@@ -1,116 +1,23 @@
-nav.Navbar{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #EDEDEF;
-}
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 64px ;
-    width: 80%;
-
-}
-.nav-item{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-ul{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-li{
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-}
-.btn-pink{
-    border: none;
-    border-radius: 4px;
+.btn-primary{
     background-color: #F44A5B;
-    padding: 8px 24px;
-    color: #ffff;
-    cursor: pointer;
+    border-color: #F44A5B;
 }
-.dash-container{
-    display: flex;
-    width: 1152px;
+
+.picture{
+    width: 550px;
     height: 335px;
-    /* background-color: red; */
-    margin: 64px auto;
-}
-.dash-pic{
     background-color: #D9D9D9;
-    width: 1152px;
 }
-.dash-describe{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    justify-content: center;
-    align-items: center;
-    margin: auto 84.5px;
-}
-.dash-describe h1{
-    margin-left: 0;
+.dashboard h1{
     font-size: 48px;
     font-weight: 700;
-    padding-bottom: 16px;
 }
-.dash-describe p{
-    font-size: 14px;
-    font-weight: 400;
+.mt-146{
+    margin-top: 146px;
 }
-.team-container{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin: 64px;
-}
-.box-team{
-    width: 373.33px;
-    height: 144px;
-    border: 1px solid #232323;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 400;
-}
-.profil-team{
-    display: flex;
-    align-items: center;
-    margin: 10px 32px;
-}
-.circle-pic{
+.circle{
     width: 56px;
     height: 56px;
-    background-color: #D9D9D9;
     border-radius: 100%;
+    background-color:#D9D9D9 ;
 }
-.name-team{
-    margin: 10px 15px;
-}
-
-.name-team h1{
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-.box-team p {
-    margin: 10px 32px;
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    height: 31px;
-    padding: 0 64px;
-    background-color: #F18F9A;
-    font-size: 14px;
-    font-weight: 400;
-}
-.btn-container{
-    margin: 64px 578px 190px 589px;
-}
-
