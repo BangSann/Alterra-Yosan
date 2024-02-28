@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSTORE | Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="text-center text-xl font-bold">Suit Game</h1>
+      <div class="flex justify-center gap-3 pt-8">
+        <button
+          class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
+          id="option1"
+          value="Gunting"
+        >
+          Gunting
+        </button>
+        <button
+          class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
+          id="option2"
+          value="Batu"
+        >
+          Batu
+        </button>
+        <button
+          class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
+          id="option3"
+          value="Kertas"
+        >
+          Kertas
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center">
+          Pilihan Lawan
+          <div id="lawan" class="font-bold"></div>
+        </div>
+        <div class="flex flex-col items-center">
+          Pilihan kita
+          <div id="option" class="font-bold"></div>
+        </div>
+        <div class="flex flex-col items-center">
+          Hasil
+          <div id="hasil" class="font-bold"></div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
