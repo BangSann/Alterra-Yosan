@@ -3,49 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MSTORE | Tailwind</title>
+    <title>Suit Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="container">
-      <h1 class="text-center text-xl font-bold">Suit Game</h1>
-      <div class="flex justify-center gap-3 pt-8">
-        <button
-          class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
-          id="option1"
-          value="Gunting"
-        >
-          Gunting
-        </button>
-        <button
-          class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
-          id="option2"
-          value="Batu"
-        >
-          Batu
-        </button>
-        <button
-          class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
-          id="option3"
-          value="Kertas"
-        >
-          Kertas
-        </button>
-      </div>
-
-      <div class="flex flex-col items-center">
-        <div class="flex flex-col items-center">
-          Pilihan Lawan
-          <div id="lawan" class="font-bold"></div>
+    <main class="flex justify-center items-center min-h-[100vh] bg-slate-100">
+      <div class="bg-slate-300 p-10 rounded-xl drop-shadow-xl items-center">
+        <h1 class="text-center text-[90px] font-bold">Suit Game</h1>
+        <div class="flex flex-col items-center justify-between">
+          <div class="items-center">
+            <div id="lawan" class="font text-[50px]"></div>
+          </div>
+          <h1 class="text-[50px]">VS</h1>
+          <div class="items-center">
+            <div id="option" class="font text-[50px]"></div>
+          </div>
         </div>
         <div class="flex flex-col items-center">
-          Pilihan kita
-          <div id="option" class="font-bold"></div>
+          <div id="hasil" class="font-bold text-[50px]"></div>
         </div>
-        <div class="flex flex-col items-center">
-          Hasil
-          <div id="hasil" class="font-bold"></div>
+        <div class="flex justify-center gap-3 pt-8">
+          <button
+            class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
+            id="option3"
+            value="Kertas"
+          >
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/hand-gestures-thin-line-signs/180/2-128.png"
+              width="90px"
+            />
+          </button>
+          <button
+            class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
+            id="option2"
+            value="Batu"
+          >
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/hand-gestures-thin-line-signs/180/13-128.png"
+              width="90px"
+            />
+          </button>
+          <button
+            class="bg-sky-500/100 w-40 h-40 rounded-full flex justify-center items-center"
+            id="option1"
+            value="Gunting"
+          >
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/hand-gestures-thin-line-signs/180/6-512.png"
+              width="90px"
+            />
+          </button>
         </div>
+        <p class="absolute top-2 left-2 text-[20px] color-">
+          rasio win : <span id="win"></span>%
+        </p>
+        <p class="absolute top-2 right-2 text-[20px]">
+          Total : <span id="total"></span>
+        </p>
       </div>
     </main>
     <script src="assets/index.js"></script>
